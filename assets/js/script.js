@@ -1,28 +1,38 @@
-let userChoice = "Scissors";
-let computerChoice = "Paper";
+
+let computerChoice = "paper";
+
+let buttons = document.getElementsByTagName('button');
+
+for (let button of buttons) {
+    button.addEventListener('click', function() {
+        let userChoice = this.getAttribute("data-type");
+        console.log(userChoice);
+        gameCompare(userChoice, computerChoice); 
+    })   
+}
 
 function gameCompare(playerOne, playerTwo) {
     if (playerOne === playerTwo) {
         console.log("It is a draw")
         drawIncrease ();
     }
-    else if (playerOne === "Rock" && (playerTwo === "Lizard" || playerTwo === "Scissors")) {
+    else if (playerOne === "rock" && (playerTwo === "lizard" || playerTwo === "scissors")) {
         console.log("Player One wins");
         userOneWin ();
     }
-    else if (playerOne === "Paper" && (playerTwo === "Rock" || playerTwo === "Spock")) {
+    else if (playerOne === "paper" && (playerTwo === "rock" || playerTwo === "spock")) {
         console.log("Player One wins");
         userOneWin ();
     }
-    else if (playerOne === "Scissors" && (playerTwo === "Paper" || playerTwo === "Lizard")) {
+    else if (playerOne === "scissors" && (playerTwo === "paper" || playerTwo === "lizard")) {
         console.log("Player One wins");
         userOneWin ();
     }
-    else if (playerOne === "Lizard" && (playerTwo === "Spock" || playerTwo === "Paper")) {
+    else if (playerOne === "lizard" && (playerTwo === "spock" || playerTwo === "paper")) {
         console.log("Player One wins");
         userOneWin ();
     }
-    else if (playerOne === "Spock" && (playerTwo === "Rock" || playerTwo === "Scissors")) {
+    else if (playerOne === "spock" && (playerTwo === "rock" || playerTwo === "scissors")) {
         console.log("Player One wins");
         userOneWin ();
     }
@@ -31,8 +41,6 @@ function gameCompare(playerOne, playerTwo) {
         userTwoWin ();
     }
 }
-
-gameCompare(userChoice, computerChoice);
 
 function userOneWin () {
     let oldScore = parseInt(document.getElementById('user-score').textContent);
