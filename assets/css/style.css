@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 #header-section {
     overflow: hidden;
     background-color: rgb(41, 143, 245);
@@ -13,6 +19,7 @@ header h1 {
     border: 2px solid white;
     border-radius: 25px;
     text-align: center;
+    margin: 0px 5px;
 }
 
 #header-section img {
@@ -24,7 +31,9 @@ header h1 {
 #game-header {
     font-size: 24px;
     color: rgb(41, 143, 245);
-    margin: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-color: rgb(41, 143, 245);
@@ -69,11 +78,6 @@ header h1 {
     font-size: 24px;
     color:rgb(41, 143, 245);
     margin-left: .3rem;
-}
-
-#results-section {
-    background-color: rgb(42, 42, 240);
-    height: 150px;
 }
 
 .modal {
