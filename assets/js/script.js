@@ -1,5 +1,5 @@
 
-let buttons = document.getElementsByTagName('button');
+let buttons = document.getElementsByClassName('gamebtn');
 
 for (let button of buttons) {
     button.addEventListener('click', function() {
