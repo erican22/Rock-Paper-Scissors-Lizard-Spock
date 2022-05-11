@@ -1,6 +1,8 @@
 
+// The buttons variable is declared and assigned values from game buttons in html file
 let buttons = document.getElementsByClassName('gamebtn');
 
+/** Main game loop, where number of times played are based on user clicking on game button */
 for (let button of buttons) {
     button.addEventListener('click', function() {
         let userChoice = this.getAttribute("data-type");
@@ -9,6 +11,7 @@ for (let button of buttons) {
     })   
 }
 
+/**Compare two opponents' choices, call relevant score function and declare game result */
 function gameCompare(user, computer) {
     if (user === computer) {
         drawIncrease ();
@@ -40,22 +43,26 @@ function gameCompare(user, computer) {
     }
 }
 
+/** Return random game choice */
 function randomChoice () {
     let gamePicks = ['rock', 'paper', 'scissors', 'lizard', 'spock']; 
     let randomChoice = gamePicks[Math.floor(Math.random()*gamePicks.length)];
     return randomChoice;
 }
 
+/** Increase user score by one */
 function userWins () {
     let oldScore = parseInt(document.getElementById('user-score').textContent);
     document.getElementById('user-score').innerHTML = oldScore + 1;
 }
 
+/** Increase computer score by one */
 function computerWins () {
     let oldScore = parseInt(document.getElementById('computer-score').textContent);
     document.getElementById('computer-score').innerHTML = oldScore + 1;
 }
 
+/** Increase draw score by one */
 function drawIncrease () {
     let oldScore = parseInt(document.getElementById('draws').textContent);
     document.getElementById('draws').innerHTML = oldScore + 1;
@@ -73,7 +80,8 @@ var closeModal = document.getElementsByClassName("closeBtn")[0];
 span.onclick = function() {
     modal.style.display = "none";
   }
-  
-  closeModal.onclick = function() {
-      modal.style.display = "none";
+
+// Close modal window when user clicks on "Click to play!" button
+closeModal.onclick = function() {
+    modal.style.display = "none";
   }
