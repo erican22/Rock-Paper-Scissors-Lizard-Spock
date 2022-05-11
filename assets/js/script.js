@@ -15,30 +15,37 @@ function gameCompare(playerOne, playerTwo) {
     if (playerOne === playerTwo) {
         console.log("It is a draw")
         drawIncrease ();
+        document.getElementById('text-result').textContent = "This one's a draw..."
     }
     else if (playerOne === "rock" && (playerTwo === "lizard" || playerTwo === "scissors")) {
         console.log("Player One wins");
         userOneWin ();
+        document.getElementById('text-result').textContent = "You won! Congratulations!"
     }
     else if (playerOne === "paper" && (playerTwo === "rock" || playerTwo === "spock")) {
         console.log("Player One wins");
         userOneWin ();
+        document.getElementById('text-result').textContent = "You won! Congratulations!"
     }
     else if (playerOne === "scissors" && (playerTwo === "paper" || playerTwo === "lizard")) {
         console.log("Player One wins");
         userOneWin ();
+        document.getElementById('text-result').textContent = "You won! Congratulations!"
     }
     else if (playerOne === "lizard" && (playerTwo === "spock" || playerTwo === "paper")) {
         console.log("Player One wins");
+        document.getElementById('text-result').textContent = "You won! Congratulations!"
         userOneWin ();
     }
     else if (playerOne === "spock" && (playerTwo === "rock" || playerTwo === "scissors")) {
         console.log("Player One wins");
         userOneWin ();
+        document.getElementById('text-result').textContent = "You won! Congratulations!"
     }
     else {
         console.log("Player Two wins");
         userTwoWin ();
+        document.getElementById('text-result').textContent = "The computer won... Better luck next time!"
     }
 }
 
