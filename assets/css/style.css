@@ -194,37 +194,9 @@ h3 {
     .closeBtn {
         font-size: 32px;
     }
-}
 
-@media screen and (min-width: 600px) {
-    .modal {
-        font-size: 36px;
-    }
-
-    .closeBtn {
-        height: 150px;
-        font-size: 40px;
-    }
-}
-
-@media screen and (min-width: 300px) {
-    .modal {
-        font-size: 24px;
-    }
-
-    .closeBtn {
-        height: 80px;
-        width: 75%;
-    }
-}
-
-@media screen and (min-width: 400px) {
-    .modal {
-        font-size: 26px;
-    }
-
-    .closeBtn {
-        font-size: 32px;
+    #header-section img {
+        height: 200px;
     }
 
     .gamebtn {
@@ -247,16 +219,72 @@ h3 {
         height: 100px;
         font-size: 36px;
     }
+
+    header {
+        font-size: 20px;
+    }
+
+    #header-section img {
+        height: 250px;
+    }
+
+    #game-header, #text-result {
+        font-size: 34px;
+    }
 }
 
 @media screen and (min-width: 600px) {
     .modal {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .closeBtn {
         height: 150px;
-        font-size: 50px;
+        font-size: 40px;
+    }
+
+    #header-section img {
+        height: 300px;
+    }
+
+    .scoreboard {
+        font-size: 30px;
+    }
+
+    #rule-section {
+        font-size: 24px;
+    }
+
+    #rule-section h3 {
+        margin-top: 70px;
+    }
+
+    #rule-section ul {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        font-size: 26px;
+    }
+
+    #header-section img {
+        height: 350px;
+    }
+
+    .gamebtn {
+        height: 80px;
+        font-size: 40px;
+    }
+
+    .gamebtn:hover {
+        height: 100px;
+        font-size: 44px;
+    }
+
+    #rule-section ul {
+        margin-left: 4rem;
     }
 }
 
@@ -269,6 +297,16 @@ h3 {
         height: 250px;
         font-size: 75px;
     }
+
+    #rule-section li {
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #rule-section ul {
+        margin-left: 5rem;
+    }
 }
 
 @media screen and (min-width: 1500px) {
@@ -279,5 +317,17 @@ h3 {
     .closeBtn {
         height: 300px;
         font-size: 100px;
+    }
+
+    header {
+        font-size: 40px;
+    }
+
+    #header-section img {
+        height: 400px;
+    }
+
+    #rule-section ul {
+        margin-left: 7rem;
     }
 }
