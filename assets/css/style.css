@@ -80,6 +80,13 @@ header h1 {
     margin-left: .3rem;
 }
 
+#results-section {
+    background-color: rgb(144, 144, 212);
+    height: 200px;
+    width: 100vw;
+    margin-left: 0px;
+}
+
 .modal {
     background-color:rgb(41, 143, 245);
     font-size: 20px;
