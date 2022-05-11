@@ -21,10 +21,38 @@ header h1 {
     margin-left: 9%;
 }
 
-#game-section {
-    background-color: rgb(42, 42, 240);
-    height: 150px;
-    margin: 10px 0;
+#game-section{
+    border: red 1px solid;
+}
+
+.gamebtn {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    margin-left: 15%;
+    border-radius: 25%;
+    width: 65%;
+    height: 40px;
+    font-size: 22px;
+}
+
+#rock-btn {
+    background-color: #e65160;
+}
+
+#paper-btn {
+    background-color: rgb(245, 245, 104);
+}
+
+#scissors-btn {
+    background-color: pink;
+}
+
+#lizard-btn {
+    background-color: rgb(117, 224, 117);
+}
+
+#spock-btn {
+    background-color: rgb(85, 161, 236);
 }
 
 #results-section {
