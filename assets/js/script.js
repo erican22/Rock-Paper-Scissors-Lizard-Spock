@@ -1,13 +1,13 @@
 
-let computerChoices = "paper";
-
 let buttons = document.getElementsByTagName('button');
 
 for (let button of buttons) {
     button.addEventListener('click', function() {
         let userChoice = this.getAttribute("data-type");
         console.log(userChoice);
-        gameCompare(userChoice, computerChoices); 
+        let computerChoice = randomChoice();
+        console.log(computerChoice);
+        gameCompare(userChoice, computerChoice); 
     })   
 }
 
@@ -42,8 +42,8 @@ function gameCompare(playerOne, playerTwo) {
     }
 }
 
-function computerChoice() {
-    let gamePicks = ['rock', 'paper', 'scissor', 'lizard', 'spock']; 
+function randomChoice() {
+    let gamePicks = ['rock', 'paper', 'scissors', 'lizard', 'spock']; 
     let randomChoice = gamePicks[Math.floor(Math.random()*gamePicks.length)];
     return randomChoice;
 }
