@@ -8,10 +8,11 @@
 
     <script src="https://kit.fontawesome.com/f2bdbddbcc.js" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>Rock, paper, scissors, lizard, Spock</title>
 </head>
 
 <body>
+    <!-- Modal window which appears after page loading -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -20,12 +21,14 @@
             <button class="closeBtn">Click to play!</button>
         </div>
     </div>
+    <!-- Header section with game image -->
     <div id="header-section">
         <header>
             <h1>Rock Paper Scissors Lizard Spock</h1>
             <img src="assets/images/SeekPng.com_scissors-icon-png_2077427.png" alt="">
         </header>
     </div>
+    <!-- Game section with header, five game buttons and the match result being presented in text -->
     <div id="game-section">
         <div id="game-header">Make your choice!</div>
         <button class="gamebtn" id="rock-btn" data-type="rock"><i class="fa-thin fa-hand-back-fist"></i> Rock</button>
@@ -35,11 +38,13 @@
         <button class="gamebtn" id="spock-btn" data-type="spock"><i class="fa-thin fa-hand-spock"></i> Spock</button>
         <div id="text-result">Awaiting input...</div>
     </div>
+    <!-- Section showcasing scores from all games -->
     <div id="results-section">
         <p class="scoreboard">User: <span id="user-score">0</span></p>
         <p class="scoreboard">Computer: <span id="computer-score">0</span></p>
         <p class="scoreboard">Draws: <span id="draws">0</span></p>
     </div>
+    <!-- A section clarifying the game rules to the user -->
     <div id="rule-section"><h3>Remember:</h3>
         <ul>
             <li>Rock beats lizard and scissors</li>
