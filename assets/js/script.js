@@ -1,5 +1,5 @@
 
-let computerChoice = "paper";
+let computerChoices = "paper";
 
 let buttons = document.getElementsByTagName('button');
 
@@ -7,7 +7,7 @@ for (let button of buttons) {
     button.addEventListener('click', function() {
         let userChoice = this.getAttribute("data-type");
         console.log(userChoice);
-        gameCompare(userChoice, computerChoice); 
+        gameCompare(userChoice, computerChoices); 
     })   
 }
 
@@ -40,6 +40,12 @@ function gameCompare(playerOne, playerTwo) {
         console.log("Player Two wins");
         userTwoWin ();
     }
+}
+
+function computerChoice() {
+    let gamePicks = ['rock', 'paper', 'scissor', 'lizard', 'spock']; 
+    let randomChoice = gamePicks[Math.floor(Math.random()*gamePicks.length)];
+    return randomChoice;
 }
 
 function userOneWin () {
