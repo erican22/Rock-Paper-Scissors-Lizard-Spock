@@ -4,63 +4,54 @@ let buttons = document.getElementsByClassName('gamebtn');
 for (let button of buttons) {
     button.addEventListener('click', function() {
         let userChoice = this.getAttribute("data-type");
-        console.log(userChoice);
         let computerChoice = randomChoice();
-        console.log(computerChoice);
         gameCompare(userChoice, computerChoice); 
     })   
 }
 
-function gameCompare(playerOne, playerTwo) {
-    if (playerOne === playerTwo) {
-        console.log("It is a draw")
+function gameCompare(user, computer) {
+    if (user === computer) {
         drawIncrease ();
         document.getElementById('text-result').textContent = "This one's a draw..."
     }
-    else if (playerOne === "rock" && (playerTwo === "lizard" || playerTwo === "scissors")) {
-        console.log("Player One wins");
-        userOneWin ();
+    else if (user === "rock" && (computer === "lizard" || computer === "scissors")) {
+        userWins ();
         document.getElementById('text-result').textContent = "You won! Congratulations!"
     }
-    else if (playerOne === "paper" && (playerTwo === "rock" || playerTwo === "spock")) {
-        console.log("Player One wins");
-        userOneWin ();
+    else if (user === "paper" && (computer === "rock" || computer === "spock")) {
+        userWins ();
         document.getElementById('text-result').textContent = "You won! Congratulations!"
     }
-    else if (playerOne === "scissors" && (playerTwo === "paper" || playerTwo === "lizard")) {
-        console.log("Player One wins");
-        userOneWin ();
+    else if (user === "scissors" && (computer === "paper" || computer === "lizard")) {
+        userWins ();
         document.getElementById('text-result').textContent = "You won! Congratulations!"
     }
-    else if (playerOne === "lizard" && (playerTwo === "spock" || playerTwo === "paper")) {
-        console.log("Player One wins");
+    else if (user === "lizard" && (computer === "spock" || computer === "paper")) {
         document.getElementById('text-result').textContent = "You won! Congratulations!"
-        userOneWin ();
+        userWins ();
     }
-    else if (playerOne === "spock" && (playerTwo === "rock" || playerTwo === "scissors")) {
-        console.log("Player One wins");
-        userOneWin ();
+    else if (user === "spock" && (computer === "rock" || computer === "scissors")) {
+        userWins ();
         document.getElementById('text-result').textContent = "You won! Congratulations!"
     }
     else {
-        console.log("Player Two wins");
-        userTwoWin ();
+        computerWins ();
         document.getElementById('text-result').textContent = "The computer won... Better luck next time!"
     }
 }
 
-function randomChoice() {
+function randomChoice () {
     let gamePicks = ['rock', 'paper', 'scissors', 'lizard', 'spock']; 
     let randomChoice = gamePicks[Math.floor(Math.random()*gamePicks.length)];
     return randomChoice;
 }
 
-function userOneWin () {
+function userWins () {
     let oldScore = parseInt(document.getElementById('user-score').textContent);
     document.getElementById('user-score').innerHTML = oldScore + 1;
 }
 
-function userTwoWin () {
+function computerWins () {
     let oldScore = parseInt(document.getElementById('computer-score').textContent);
     document.getElementById('computer-score').innerHTML = oldScore + 1;
 }
