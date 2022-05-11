@@ -44,6 +44,11 @@ header h1 {
     font-size: 22px;
 }
 
+.gamebtn:hover {
+    height: 70px;
+    font-size: 28px;
+}
+
 #rock-btn {
     background-color: #e65160;
 }
