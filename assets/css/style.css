@@ -289,21 +289,26 @@ h3 {
 }
 
 @media screen and (min-width: 1000px) {
+    #rule-section li {
+        margin-left: 4rem;
+    }
+
+    .close-btn {
+        height: 200px;
+        font-size: 75px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .modal {
         font-size: 40px;
     }
 
     .close-btn {
-        height: 250px;
-        font-size: 75px;
+        height: 230px;
+        font-size: 80px;
     }
-
-    #rule-section li {
-        margin-left: 4rem;
-    }
-}
-
-@media screen and (min-width: 1200px) {
+    
     #rule-section ul {
         margin-left: 5rem;
     }
@@ -315,7 +320,6 @@ h3 {
     }
 
     .close-btn {
-        height: 300px;
         font-size: 100px;
     }
 
