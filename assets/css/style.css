@@ -98,6 +98,25 @@ header h1 {
     color: white;
 }
 
+#rule-section {
+    width: 100vw;
+    text-align: center;
+    font-style: oblique;
+    background-color: rgb(144, 144, 212);
+}
+
+h3 {
+    font-size: 24px;
+}
+
+#rule-section li {
+    list-style-type: none;
+    margin-right: 15%;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
 .modal {
     background-color:rgb(41, 143, 245);
     font-size: 20px;
