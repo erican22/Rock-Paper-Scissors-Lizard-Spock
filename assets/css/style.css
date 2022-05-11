@@ -140,9 +140,13 @@ h3 {
     overflow: auto;
 }
 
+.modal-content {
+    text-align: center;
+}
+
 .modal-content p {
-    margin-left: 1rem;
-    width: 150px;
+    margin-left: 10%;
+    width: 80%;
 }
 
 .modal span {
@@ -170,5 +174,3 @@ h3 {
 }
 
 /* Media queries */
-
-
