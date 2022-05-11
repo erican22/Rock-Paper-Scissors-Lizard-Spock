@@ -14,3 +14,44 @@ header {
     height: 150px;
 }
 
+.modal {
+    background-color:rgb(41, 143, 245);
+    font-size: 20px;
+    position: fixed;
+    z-index: 1;
+    width: 85vw;
+    height: 90vh;
+    left: 7%;
+    overflow: auto;
+}
+
+.modal-content p {
+    margin-left: 1rem;
+    width: 150px;
+}
+
+.modal span {
+    color: red;
+}
+
+.modal span:hover {
+    color: black;
+}
+
+.closeBtn {
+    margin: 3px 1.2rem;
+    width: 130px;
+    height: 75px;
+    border: 2px double black;
+    color: blue;
+    background-color: rgb(255, 255, 255);
+    font-size: 28px;
+    transition: background-color 2s, color 1s;
+}
+
+.closeBtn:hover {
+    background-color: rgb(212, 56, 56);
+    color: black;
+}
+
+
