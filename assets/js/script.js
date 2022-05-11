@@ -15,31 +15,31 @@ for (let button of buttons) {
 function gameCompare(user, computer) {
     if (user === computer) {
         drawIncrease ();
-        document.getElementByClassName('textResult').textContent = "This one's a draw..."
+        document.getElementById('textResult').textContent = "This one's a draw..."
     }
     else if (user === "rock" && (computer === "lizard" || computer === "scissors")) {
         userWins ();
-        document.getElementByClassName('textResult').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
     }
     else if (user === "paper" && (computer === "rock" || computer === "spock")) {
         userWins ();
-        document.getElementByClassName('textResult').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
     }
     else if (user === "scissors" && (computer === "paper" || computer === "lizard")) {
         userWins ();
-        document.getElementByClassName('textResult').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
     }
     else if (user === "lizard" && (computer === "spock" || computer === "paper")) {
-        document.getElementByClassName('textResult').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
         userWins ();
     }
     else if (user === "spock" && (computer === "rock" || computer === "scissors")) {
         userWins ();
-        document.getElementByClassName('textResult').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
     }
     else {
         computerWins ();
-        document.getElementByClassName('textResult').textContent = "The computer won... Better luck next time!"
+        document.getElementById('textResult').textContent = "The computer won... Better luck next time!"
     }
 }
 

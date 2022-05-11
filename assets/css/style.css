@@ -79,7 +79,7 @@ header h1 {
 }
 
 /*Attributes of text-result div*/
-#text-result {
+.text-result {
     font-size: 24px;
     color:rgb(41, 143, 245);
     text-align: center;
