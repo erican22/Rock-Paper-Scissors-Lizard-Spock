@@ -1,9 +1,11 @@
+/* Attributes assigned to the body*/
 body {
     margin: 0;
     padding: 0;
     border: none;
 }
 
+/* Attributes for header, including header image*/
 #header-section {
     overflow: hidden;
     background-color: rgb(41, 143, 245);
@@ -28,6 +30,7 @@ header h1 {
     margin-left: 9%;
 }
 
+/* Attributes for game section, including game header and game buttons*/
 #game-header {
     font-size: 24px;
     color: rgb(41, 143, 245);
@@ -54,6 +57,7 @@ header h1 {
     font-size: 28px;
 }
 
+/* Color of game buttons*/
 #rock-btn {
     background-color: #e65160;
 }
@@ -74,12 +78,14 @@ header h1 {
     background-color: rgb(85, 161, 236);
 }
 
+/*Attributes of text-result div*/
 #text-result {
     font-size: 24px;
     color:rgb(41, 143, 245);
     margin-left: .3rem;
 }
 
+/* Attributes of results and scoreboard sections*/
 #results-section {
     background-color: rgb(144, 144, 212);
     height: 200px;
@@ -100,6 +106,7 @@ header h1 {
     color: white;
 }
 
+/* Attributes of rule section, including h3 and list items*/
 #rule-section {
     width: 100vw;
     text-align: center;
@@ -121,6 +128,7 @@ h3 {
     margin-bottom: 5px;
 }
 
+/* Attributes of the modal window, including modal elements and hover effects of span and "close" button*/
 .modal {
     background-color:rgb(41, 143, 245);
     font-size: 20px;
@@ -160,5 +168,7 @@ h3 {
     background-color: rgb(212, 56, 56);
     color: black;
 }
+
+/* Media queries */
 
 
