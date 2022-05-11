@@ -1,6 +1,24 @@
+#header-section {
+    overflow: hidden;
+    background-color: rgb(41, 143, 245);
+    width: 100vw;
+}
+
 header {
-    background-color: rgb(42, 42, 240);
+    margin-left: 3px;
+    margin-right: 10px;
+    color: yellow;
+}
+header h1 {
+    border: 2px solid white;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#header-section img {
+    width: 80%;
     height: 150px;
+    margin-left: 9%;
 }
 
 #game-section {
