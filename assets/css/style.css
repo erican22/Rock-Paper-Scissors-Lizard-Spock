@@ -25,6 +25,15 @@ header h1 {
     border: red 1px solid;
 }
 
+#game-header {
+    font-size: 24px;
+    color: rgb(41, 143, 245);
+    margin: 10px 0px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(41, 143, 245);
+}
+
 .gamebtn {
     margin-top: 8px;
     margin-bottom: 4px;
