@@ -21,10 +21,6 @@ header h1 {
     margin-left: 9%;
 }
 
-#game-section{
-    border: red 1px solid;
-}
-
 #game-header {
     font-size: 24px;
     color: rgb(41, 143, 245);
