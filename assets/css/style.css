@@ -82,7 +82,7 @@ header h1 {
 #text-result {
     font-size: 24px;
     color:rgb(41, 143, 245);
-    margin-left: .3rem;
+    text-align: center;
 }
 
 /* Attributes of results and scoreboard sections*/
@@ -225,6 +225,16 @@ h3 {
 
     .closeBtn {
         font-size: 32px;
+    }
+
+    .gamebtn {
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .gamebtn:hover {
+        height: 80px;
+        font-size: 36px;
     }
 }
 
