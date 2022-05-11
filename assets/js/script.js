@@ -62,3 +62,20 @@ function drawIncrease () {
     let oldScore = parseInt(document.getElementById('draws').textContent);
     document.getElementById('draws').innerHTML = oldScore + 1;
 }
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+var closeModal = document.getElementsByClassName("closeBtn")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+closeModal.onclick = function() {
+    modal.style.display = "none";
+}
