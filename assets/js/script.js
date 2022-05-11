@@ -1,6 +1,6 @@
 
 // The buttons variable is declared and assigned values from game buttons in html file
-let buttons = document.getElementsByClassName('gamebtn');
+let buttons = document.getElementsByClassName('gameBtn');
 
 /** Main game loop, where number of times played are based on user clicking on game button */
 for (let button of buttons) {
@@ -15,31 +15,31 @@ for (let button of buttons) {
 function gameCompare(user, computer) {
     if (user === computer) {
         drawIncrease ();
-        document.getElementById('text-result').textContent = "This one's a draw..."
+        document.getElementById('textResult').textContent = "This one's a draw..."
     }
     else if (user === "rock" && (computer === "lizard" || computer === "scissors")) {
         userWins ();
-        document.getElementById('text-result').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
     }
     else if (user === "paper" && (computer === "rock" || computer === "spock")) {
         userWins ();
-        document.getElementById('text-result').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
     }
     else if (user === "scissors" && (computer === "paper" || computer === "lizard")) {
         userWins ();
-        document.getElementById('text-result').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
     }
     else if (user === "lizard" && (computer === "spock" || computer === "paper")) {
-        document.getElementById('text-result').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
         userWins ();
     }
     else if (user === "spock" && (computer === "rock" || computer === "scissors")) {
         userWins ();
-        document.getElementById('text-result').textContent = "You won! Congratulations!"
+        document.getElementById('textResult').textContent = "You won! Congratulations!"
     }
     else {
         computerWins ();
-        document.getElementById('text-result').textContent = "The computer won... Better luck next time!"
+        document.getElementById('textResult').textContent = "The computer won... Better luck next time!"
     }
 }
 
@@ -52,14 +52,14 @@ function randomChoice () {
 
 /** Increase user score by one */
 function userWins () {
-    let oldScore = parseInt(document.getElementById('user-score').textContent);
-    document.getElementById('user-score').innerHTML = oldScore + 1;
+    let oldScore = parseInt(document.getElementById('userScore').textContent);
+    document.getElementById('userScore').innerHTML = oldScore + 1;
 }
 
 /** Increase computer score by one */
 function computerWins () {
-    let oldScore = parseInt(document.getElementById('computer-score').textContent);
-    document.getElementById('computer-score').innerHTML = oldScore + 1;
+    let oldScore = parseInt(document.getElementById('computerScore').textContent);
+    document.getElementById('computerScore').innerHTML = oldScore + 1;
 }
 
 /** Increase draw score by one */
