@@ -87,6 +87,17 @@ header h1 {
     margin-left: 0px;
 }
 
+.scoreboard {
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+    top: 22px;
+    font-size: 24px;
+    border-style: outset;
+    border-color: black;
+    color: white;
+}
+
 .modal {
     background-color:rgb(41, 143, 245);
     font-size: 20px;
