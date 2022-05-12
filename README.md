@@ -50,6 +50,9 @@ In the game buttons, icons are used to display the hand signs next to the correc
 ### Test strategy
 ### Test results
 ## Deployment
+This project was started by creating a workspace in Gitpod using a template provided by Code Institute. Coding was made in browser window using Gitpod. The repository consists of an index.html file, favicon, audio files and an assets folder. The assets folder contains css folder with style.css file, js folder with script.js file, and folders for images. Changes were saved, committed and deployed using git.add, git.commit -m, and git.push commands. 
+
+The finished website was deployed to Github Pages. 
 ## Credits
 * Modal window <br>
 Some of the code to create a modal window comes from the w3schools.com website: 
