@@ -131,12 +131,15 @@ h3 {
 /* Attributes of the modal window, including modal elements and hover effects of span and "close" button*/
 .modal {
     background-color:rgb(41, 143, 245);
+    border-top: 0vh;
+    border-bottom: 10vh solid rgba(0,0,0,.8);
+    border-left: 7.5vw solid rgba(0,0,0,.8);
+    border-right: 7.5vw solid rgba(0,0,0,.8);
     font-size: 20px;
     position: fixed;
     z-index: 1;
     width: 85vw;
     height: 90vh;
-    left: 7%;
     overflow: auto;
 }
 

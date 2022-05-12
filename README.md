@@ -15,7 +15,13 @@ In the game buttons, icons are used to display the hand signs next to the correc
 ## Wireframes
 ## Features
 ### Existing features
+* Modal window appearing when page first loads
+* Rock, paper, scissors lizard, Spock game against computer
+* Game results written out on screen
+* Score system
 ### Features left to implement
+* Cross-platform play (player versus player)
+* Save user results to database for later access
 ## Technologies
 ## Testing
 ### Test strategy
