@@ -1,3 +1,4 @@
+let winMusic = new Audio('win.wav');
 
 // The buttons variable is declared and assigned values from game buttons in html file
 let buttons = document.getElementsByClassName('gameBtn');
@@ -20,22 +21,27 @@ function gameCompare(user, computer) {
     else if (user === "rock" && (computer === "lizard" || computer === "scissors")) {
         userWins ();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
+        winMusic.play();
     }
     else if (user === "paper" && (computer === "rock" || computer === "spock")) {
         userWins ();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
+        winMusic.play();
     }
     else if (user === "scissors" && (computer === "paper" || computer === "lizard")) {
         userWins ();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
+        winMusic.play();
     }
     else if (user === "lizard" && (computer === "spock" || computer === "paper")) {
         document.getElementById('textResult').textContent = "You won! Congratulations!";
         userWins ();
+        winMusic.play();
     }
     else if (user === "spock" && (computer === "rock" || computer === "scissors")) {
         userWins ();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
+        winMusic.play();
     }
     else {
         computerWins ();
