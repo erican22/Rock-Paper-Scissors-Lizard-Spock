@@ -4,15 +4,21 @@ The site allows the user to play a game of 'Rock, Paper, Scissors, Lizard, Spock
 When the page is loaded, the user is presented with a window explaining the rules, using a quote from the show 'Big Bang Theory'. The user exits the modal window and arrives at the main page. The main page contains a header, a game section, a score section, and finally a rules section at the bottom. 
 
 The wepbage's layout will change depending on the size of the screen used, making the site user-friendly and responsive whether it's run on a pc, laptop, tablet or a smartphone. 
+
+## Wireframes
+The original wireframes intended for this project.<br>
+![Wireframe for mobile and laptop screen](assets/images/READMEimages/wireframe.png)
+
 ## Design
 ### Color scheme
 For this website, lighter, medium-bright colors were used. The header, results and rule sections contains softer background colors, while the game buttons are more brightly colored against a white background. The bright coloring brings focus to the game section, which is the most important one. 
 
 The modal window has black text against the same clear blue background as the header. A button transitioning between white and red background contrasts to the modal window. 
 ### Typography
+The top header and game header uses the Bubblegum font. The game button and modal button uses the Lato font. The modal text and scoreboard uses the Rubik font.
 ### Icons
 In the game buttons, icons are used to display the hand signs next to the correct game options. 
-## Wireframes
+
 ## Features
 ### Existing features
 * Modal window appearing when page first loads
