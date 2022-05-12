@@ -37,8 +37,8 @@ function gameCompare(user, computer) {
         winSound.play();
     }
     else if (user === "lizard" && (computer === "spock" || computer === "paper")) {
-        document.getElementById('textResult').textContent = "You won! Congratulations!";
         userWins ();
+        document.getElementById('textResult').textContent = "You won! Congratulations!";
         winSound.play();
     }
     else if (user === "spock" && (computer === "rock" || computer === "scissors")) {
