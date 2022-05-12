@@ -48,7 +48,27 @@ In the game buttons, icons are used to display the hand signs next to the correc
 ** Fontawesome icons is added to the game buttons. 
 ## Testing
 ### Test strategy
+During the coding process, continuous testing was done by using the console.log function in javascript, and viewing the website from a temporary server by using the python3 -m http.server command. Modal and game functionality, as well as website layout and design was taken into account. Media queries were used to ensure responsive design for screens of different sizes. The code was run through validators of HTML, CSS and Javascript. Finally, the website was deployed to Github Pages and tested on the browsers Microsoft Edge and Firefox on pc, as well as Safari on smartphone. 
 ### Test results
+* HTML validator <br>
+The HTML code was run through the W3C validator. No issues were found. <br>
+![HTML validator screenshot](assets/images/READMEimages/htmlvalid.png)
+* CSS validator <br>
+The CSS code was run through the W3C jigsaw validator. No issues were found. <br>
+![CSS validator screenshot](assets/images/READMEimages/cssvalid.png)
+* Javascript validator <br>
+The javascript code was run through the jshint validator. Three types of issues were found: <br>
+  * 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+  * 'for of' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+  * Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (randomChoice, gameCompare) <br>
+  
+  The issues with 'let' and 'for of' is related to the ES6 version, and several people appear to get error messages regarding the ES6 while testing javascript code. The code of the website works as intended, and this is not a significant issue. 
+  
+  The third issue points out that semantic issues could be caused due to the function being declared and run by the click event. I think the for loop is fine as is, since the click event and the accompanying function only appears within that specific for loop, and the game works as intended. <br>
+  ![Jshint validator screenshot](assets/images/READMEimages/jsvalid.png)
+* DIfferent browsers and consoles<br>
+The website works well on the browsers tested, and on laptop and smartphone. The HTML elements adjust nicely to the different screen size. No elements overlap. 
+
 ## Deployment
 This project was started by creating a workspace in Gitpod using a template provided by Code Institute. Coding was made in browser window using Gitpod. The repository consists of an index.html file, favicon, audio files and an assets folder. The assets folder contains css folder with style.css file, js folder with script.js file, and folders for images. Changes were saved, committed and deployed using git.add, git.commit -m, and git.push commands. 
 
