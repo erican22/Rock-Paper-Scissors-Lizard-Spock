@@ -21,12 +21,13 @@ In the game buttons, icons are used to display the hand signs next to the correc
 
 ## Features
 ### Existing features
-* Modal window appearing when page first loads
-
-* Rock, paper, scissors lizard, Spock game against computer
+* Modal window appearing when page first loads <br>
+![Modal window screenshot](assets/images/READMEimages/modal.png)
+* Rock, paper, scissors lizard, Spock game against computer, with game results written out on screen (replacing 'Awaiting input...' text) <br>
+![Game screenshot](assets/images/READMEimages/game.png)
 * Game audio after win, loss or draw
-* Game results written out on screen
-* Score system
+* Score system and rule section <br>
+![Score and result screenshot](assets/images/READMEimages/scoreboard.png)
 ### Features left to implement
 * Cross-platform play (player versus player)
 * Save user results to database for later access
