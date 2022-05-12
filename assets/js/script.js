@@ -17,37 +17,37 @@ for (let button of buttons) {
 /**Compare two opponents' choices, call relevant score function and declare game result */
 function gameCompare(user, computer) {
     if (user === computer) {
-        drawIncrease ();
+        drawIncrease();
         document.getElementById('textResult').textContent = "This one's a draw...";
         drawSound.play();
     }
     else if (user === "rock" && (computer === "lizard" || computer === "scissors")) {
-        userWins ();
+        userWins();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
         winSound.play();
     }
     else if (user === "paper" && (computer === "rock" || computer === "spock")) {
-        userWins ();
+        userWins();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
         winSound.play();
     }
     else if (user === "scissors" && (computer === "paper" || computer === "lizard")) {
-        userWins ();
+        userWins();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
         winSound.play();
     }
     else if (user === "lizard" && (computer === "spock" || computer === "paper")) {
-        userWins ();
+        userWins();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
         winSound.play();
     }
     else if (user === "spock" && (computer === "rock" || computer === "scissors")) {
-        userWins ();
+        userWins();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
         winSound.play();
     }
     else {
-        computerWins ();
+        computerWins();
         document.getElementById('textResult').textContent = "The computer won... Better luck next time!";
         loseSound.play();
     }
