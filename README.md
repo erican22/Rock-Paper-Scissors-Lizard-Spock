@@ -16,6 +16,7 @@ In the game buttons, icons are used to display the hand signs next to the correc
 ## Features
 ### Existing features
 * Modal window appearing when page first loads
+
 * Rock, paper, scissors lizard, Spock game against computer
 * Game audio after win, loss or draw
 * Game results written out on screen
