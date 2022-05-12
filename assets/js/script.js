@@ -1,4 +1,5 @@
 let winMusic = new Audio('win.wav');
+let loseMusic = new Audio('lose.wav');
 
 // The buttons variable is declared and assigned values from game buttons in html file
 let buttons = document.getElementsByClassName('gameBtn');
@@ -46,6 +47,7 @@ function gameCompare(user, computer) {
     else {
         computerWins ();
         document.getElementById('textResult').textContent = "The computer won... Better luck next time!";
+        loseMusic.play();
     }
 }
 
