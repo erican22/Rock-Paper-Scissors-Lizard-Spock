@@ -1,5 +1,6 @@
-let winMusic = new Audio('win.wav');
-let loseMusic = new Audio('lose.wav');
+let winSound = new Audio('win.wav');
+let loseSound = new Audio('lose.wav');
+let drawSound = new Audio('draw.wav');
 
 // The buttons variable is declared and assigned values from game buttons in html file
 let buttons = document.getElementsByClassName('gameBtn');
@@ -18,36 +19,37 @@ function gameCompare(user, computer) {
     if (user === computer) {
         drawIncrease ();
         document.getElementById('textResult').textContent = "This one's a draw...";
+        drawSound.play();
     }
     else if (user === "rock" && (computer === "lizard" || computer === "scissors")) {
         userWins ();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
-        winMusic.play();
+        winSound.play();
     }
     else if (user === "paper" && (computer === "rock" || computer === "spock")) {
         userWins ();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
-        winMusic.play();
+        winSound.play();
     }
     else if (user === "scissors" && (computer === "paper" || computer === "lizard")) {
         userWins ();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
-        winMusic.play();
+        winSound.play();
     }
     else if (user === "lizard" && (computer === "spock" || computer === "paper")) {
         document.getElementById('textResult').textContent = "You won! Congratulations!";
         userWins ();
-        winMusic.play();
+        winSound.play();
     }
     else if (user === "spock" && (computer === "rock" || computer === "scissors")) {
         userWins ();
         document.getElementById('textResult').textContent = "You won! Congratulations!";
-        winMusic.play();
+        winSound.play();
     }
     else {
         computerWins ();
         document.getElementById('textResult').textContent = "The computer won... Better luck next time!";
-        loseMusic.play();
+        loseSound.play();
     }
 }
 
