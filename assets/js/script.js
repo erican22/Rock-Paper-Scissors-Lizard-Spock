@@ -1,3 +1,5 @@
+/* Variables for game audio
+Audio files are from mixkit.co */
 let winSound = new Audio('win.wav');
 let loseSound = new Audio('lose.wav');
 let drawSound = new Audio('draw.wav');
