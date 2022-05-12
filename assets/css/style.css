@@ -281,6 +281,8 @@ h3 {
 
     #header-section img {
         height: 350px;
+        width: 60%;
+        margin-left: 20%;
     }
 
     .game-btn {
@@ -325,6 +327,13 @@ h3 {
     
     #rule-section ul {
         margin-left: 5rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #header-section img {
+        width: 50%;
+        margin-left: 25%;
     }
 }
 
