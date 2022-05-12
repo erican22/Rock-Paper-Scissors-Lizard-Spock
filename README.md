@@ -43,20 +43,19 @@ In the game buttons, icons are used to display the hand signs next to the correc
 ### Test results
 ## Deployment
 ## Credits
-*Modal window
-Some of the code to create a modal window comes from the w3schools.com website. Link: 
-** https://www.w3schools.com/howto/howto_css_modals.asp 
+* Modal window <br>
+Some of the code to create a modal window comes from the w3schools.com website: 
+  * https://www.w3schools.com/howto/howto_css_modals.asp 
 
-*Game audio
-The audio used comes from the mixkit.co website. Links: 
-** https://mixkit.co/free-sound-effects/win/
-** https://mixkit.co/free-sound-effects/lose/
-** https://mixkit.co/free-sound-effects/player/ 
+* Game audio <br>
+The audio used comes from the mixkit.co website: 
+  * https://mixkit.co/free-sound-effects/win/
+  * https://mixkit.co/free-sound-effects/lose/
+  *  https://mixkit.co/free-sound-effects/player/ 
 
-*Game image
-The image used in the header comes from the seekpng.com website. Link: 
-** https://www.seekpng.com/ima/u2w7w7o0i1t4o0a9/ 
+* Game image <br>
+The image used in the header comes from the seekpng.com website:  
+  * https://www.seekpng.com/ima/u2w7w7o0i1t4o0a9/ 
 
-*Favicon
-Link: 
-** https://icon-library.com/icon/rock-paper-scissors-icon-6.html 
+* Favicon
+  * https://icon-library.com/icon/rock-paper-scissors-icon-6.html 
