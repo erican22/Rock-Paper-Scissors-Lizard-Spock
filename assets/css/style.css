@@ -52,6 +52,7 @@ header h1 {
     width: 65%;
     height: 40px;
     font-size: 22px;
+    font-family: 'Lato', sans-serif;
 }
 
 .game-btn:hover {
@@ -85,6 +86,7 @@ header h1 {
     font-size: 24px;
     color:rgb(41, 143, 245);
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* Attributes of results and scoreboard sections*/
@@ -106,6 +108,7 @@ header h1 {
     border-style: outset;
     border-color: black;
     color: white;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* Attributes of rule section, including h3 and list items*/
@@ -152,6 +155,7 @@ h3 {
 .modal-content p {
     margin-left: 10%;
     width: 80%;
+    font-family: 'Rubik', sans-serif;
 }
 
 .modal span {
@@ -171,6 +175,7 @@ h3 {
     background-color: rgb(255, 255, 255);
     font-size: 28px;
     transition: background-color 2s, color 1s;
+    font-family: 'Lato', sans-serif;
 }
 
 .close-btn:hover {
