@@ -17,14 +17,46 @@ In the game buttons, icons are used to display the hand signs next to the correc
 ### Existing features
 * Modal window appearing when page first loads
 * Rock, paper, scissors lizard, Spock game against computer
+* Game audio after win, loss or draw
 * Game results written out on screen
 * Score system
 ### Features left to implement
 * Cross-platform play (player versus player)
 * Save user results to database for later access
 ## Technologies
+* HTML
+** This project uses HTML as the main language used to complete the website structure.
+* CSS
+** This project uses custom CSS to style the website.
+* Javascript
+** This project uses javascript to create user interactivity and game functionality to the website. 
+* Gitpod
+** This IDE is used during the project.
+* Github
+** Github is the hosting site used to store the source code for the website, and Github Pages is used to deploy the live site.
+* Google Fonts
+** The fonts Bubblegum, Lato and Rubik fonts are used in the style of the website.
+* Fontawesome
+** Fontawesome icons is added to the game buttons. 
 ## Testing
 ### Test strategy
 ### Test results
 ## Deployment
 ## Credits
+*Modal window
+Some of the code to create a modal window comes from the w3schools.com website. Link: 
+** https://www.w3schools.com/howto/howto_css_modals.asp 
+
+*Game audio
+The audio used comes from the mixkit.co website. Links: 
+** https://mixkit.co/free-sound-effects/win/
+** https://mixkit.co/free-sound-effects/lose/
+** https://mixkit.co/free-sound-effects/player/ 
+
+*Game image
+The image used in the header comes from the seekpng.com website. Link: 
+** https://www.seekpng.com/ima/u2w7w7o0i1t4o0a9/ 
+
+*Favicon
+Link: 
+** https://icon-library.com/icon/rock-paper-scissors-icon-6.html 
